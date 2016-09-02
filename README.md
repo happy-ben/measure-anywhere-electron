@@ -7,12 +7,12 @@
 ###Accessing your electron from the web
 **Make the following request to call the 'led' function:**
 ````
-curl -X POST -H "Content-Type: application/json" -H "Cache-Control: no-cache" -d '{"params":"on"}' "https://api.particle.io/v1/devices/< device id >/led?access_token=< access token >"
+curl -X POST -H "Content-Type: application/json" -d '{"params":"on"}' "https://api.particle.io/v1/devices/< device id >/led?access_token=< access token >"
 ````
 
 **Make the following request to access the 'sensorValue' variable:**
 ````
-https://api.particle.io/v1/devices/< device id >/sensorValue?access_token=< access token >
+curl -X GET "https://api.particle.io/v1/devices/< device id >/sensorValue?access_token=< access token >
 ````
 
 | placeholder       |  where to find the value                          |
