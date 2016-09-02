@@ -9,7 +9,7 @@ void setup()
 
 void loop(){}
 
-int ledToggle(String command) {
+int ledToggle(String command) { //Particle.functions always take a string as an argument and return an integer
     if (command=="on") {
         digitalWrite(led,HIGH);
         return 1;
