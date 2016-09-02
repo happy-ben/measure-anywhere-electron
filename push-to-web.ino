@@ -19,7 +19,8 @@ void setup() {
 void loop() {
     int currentValue = analogRead(photoresistor);
     if((initialValue - currentValue) > 300){
-        Particle.publish("lightStatus","darker",60,PRIVATE);
+        Particle.publish("lightStatus","darker",60,PRIVATE); //publish 'ligthStatus' event with 'darker' as data. 60 is TTL (not taken in considetarion by cloud yet)
+        blink();
         blink();
     }
     delay(100);
