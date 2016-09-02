@@ -29,3 +29,9 @@ Events published to the cloud are logged here: https://console.particle.io/logs
 
 In order to react to events published to the particle cloud, configure a webhook here: https://console.particle.io/integrations
 
+###Helpful links
+| description                  | url                    |
+|------------------------------|------------------------|
+| log HTTP requests            | http://requestb.in     |
+| visualize and react to data  | https://thingspeak.com |
+| sms & calls API              | https://www.nexmo.com  |
