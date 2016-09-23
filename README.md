@@ -5,11 +5,19 @@
 3. run ``particle flash --serial firmware.bin`` in the folder where you downloaded the bin
 
 ###Accessing your electron from the web
+**Make function available as endpoint:**
+````
+Particle.function("led", setLedStatus)
+````
 **Make the following request to call the 'led' function:**
 ````
 curl -X POST -H "Content-Type: application/json" -d '{"params":"on"}' "https://api.particle.io/v1/devices/< device id >/led?access_token=< access token >"
 ````
 
+**Make variable available as endpoint:**
+````
+ Particle.variable("sensorValue", &sensorValue, INT);
+````
 **Make the following request to access the 'sensorValue' variable:**
 ````
 curl -X GET "https://api.particle.io/v1/devices/< device id >/sensorValue?access_token=< access token >
