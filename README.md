@@ -28,7 +28,7 @@ curl -X GET "https://api.particle.io/v1/devices/< device id >/sensorValue?access
 | < device id >     | https://console.particle.io/devices               |
 | < access token >  | Web-IDE under settings: https://build.particle.io |
 
-###Publish events from electron
+### Publish events from electron
 This publishes a 'lightStatus' event with the data 'darker' to the particle cloud
 ````
 Particle.publish("lightStatus","darker",60,PRIVATE);
@@ -37,7 +37,7 @@ Events published to the cloud are logged here: https://console.particle.io/logs
 
 In order to react to events published to the particle cloud, configure a webhook here: https://console.particle.io/integrations
 
-###Helpful links
+### Helpful links
 | description                  | url                    |
 |------------------------------|------------------------|
 | log HTTP requests            | http://requestb.in     |
